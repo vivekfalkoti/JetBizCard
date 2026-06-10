@@ -63,7 +63,7 @@ fun CreateBizCard() {
             modifier = Modifier
                 .width(100.dp)
                 .height(390.dp)
-                .padding(20.dp),
+                .padding(30.dp),
             shape = RoundedCornerShape(30.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White),
             elevation = CardDefaults.cardElevation(defaultElevation = 10.dp)
@@ -102,7 +102,7 @@ private fun CreateProfileInfo() {
     )
     Text(
         modifier = Modifier.padding(top = 20.dp),
-        text = "Linkedln : @vivekfalkoti",
+        text = "LinkedIn : @vivekfalkoti",
         style = MaterialTheme.typography.headlineSmall
     )
 }
