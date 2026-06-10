@@ -6,7 +6,7 @@ A modern Android Business Card application built using **Kotlin**, **Jetpack Com
 
 ## Project Preview
 
-<img src="Screenshots/screenshot.png" width="350"/>
+<img src="Screenshots/screenshot.png" width="250"/>
 
 ---
 
