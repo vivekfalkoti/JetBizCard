@@ -90,7 +90,7 @@ fun CreateBizCard() {
 @Composable
 private fun CreateProfileInfo() {
     Text(
-        modifier = Modifier.padding(top = 30.dp),
+        modifier = Modifier.padding(top = 50.dp),
         text = "Vivek Falkoti",
         style = MaterialTheme.typography.headlineLarge,
         color = MaterialTheme.colorScheme.primary
