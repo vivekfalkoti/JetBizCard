@@ -19,11 +19,14 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -67,18 +70,41 @@ fun CreateBizCard() {
         ) {
             Column(
                 modifier = Modifier
-                    .height(300.dp)
+                    .height(600.dp)
                     .fillMaxWidth(),
                 verticalArrangement = Arrangement.Top,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 CreateImageProfile()
                 HorizontalDivider(thickness = 5.dp, color = Color.LightGray)
+                CreateProfileInfo()
+                Button(onClick = {}, Modifier.padding(top = 30.dp)) {
+                    Text(text = "Portfolio", style = MaterialTheme.typography.headlineSmall)
+                }
             }
-
 
         }
     }
+}
+
+@Composable
+private fun CreateProfileInfo() {
+    Text(
+        modifier = Modifier.padding(top = 30.dp),
+        text = "Vivek Falkoti",
+        style = MaterialTheme.typography.headlineLarge,
+        color = MaterialTheme.colorScheme.primary
+    )
+    Text(
+        modifier = Modifier.padding(top = 20.dp),
+        text = "Native Android Developer",
+        style = MaterialTheme.typography.headlineSmall
+    )
+    Text(
+        modifier = Modifier.padding(top = 20.dp),
+        text = "Linkedln : @vivekfalkoti",
+        style = MaterialTheme.typography.headlineSmall
+    )
 }
 
 @Composable
